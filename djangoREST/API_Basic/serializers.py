@@ -27,5 +27,6 @@ class ArticleSerializer(serializers.ModelSerializer):
     #specify all the fields that we have in our model
     class Meta:
         model= Article
-        fields=['id','title','author']
-        
+        #fields=['id','title','author']
+        #if we want all fields then we can just specify fields= '__all__'
+        fields='__all__'
